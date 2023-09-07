@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Payment</title>
+    <link rel="stylesheet" href="style-card.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="modal" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="popup-content">
+                <img src="style/Visalogo.png" alt="">
+            
+                <!-- payment token  -->
+                <form>
+                  <div class="card-top">
+                      <div class="card-left">
+                        <label class="p_title" for="name">Card Number</label><br>
+                        <input type="text" id="number" name="number" class="insert" placeholder="1234 1234 1234 1234" required><br>
+                      </div>
+                      <div class="card-right">  
+                          <label class="p_title1" for="name">CVC</label><br>
+                        <input type="text" id="number" name="number" class="insert-r" placeholder="1234" required><br>
+                    </div>
+                  </div>
+                  <div class="card-top-2nd">
+                    <div class="card-2nd">
+                      <label class="p_title_2nd" for="name">Card Holder Name</label><br>
+                      <input type="text" id="number" name="number" class="insert-2nd" placeholder="Mozu Rahman" required><br>
+                    </div>
+                </div>
+                <label class="p_title_3rd" for="name">Experition Date</label><br>
+                <div class="card-top-exp">
+                    
+                    <div class="exp-d">
+                      <input type="text" id="number" name="number" class="insert-exp-1" placeholder="Day" required><br>
+                    </div>
+                    <div class="exp-m">  
+                      <input type="text" id="number" name="number" class="insert-exp-2" placeholder="Month" required><br>
+                    </div>
+                    <div class="exp-y">  
+                      <input type="text" id="number" name="number" class="insert-exp-3" placeholder="Year" required><br>
+                    </div>
+                </div>
+                    <div class="footer-button-4">
+                        <button type="button" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Confirm</button>
+                    </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="popup-content">
+                  <img src="style/Visalogo.png" alt="">
+              
+                  <!-- payment token  -->
+                  <form id="step2Form" class="form-step">
+                    <div class="card-top">
+                        <div class="card-left">
+                            <label class="p_title-vc" for="name">Verification Code</label><br>
+                            <input type="text" id="vcode" name="vcode" class="insert" placeholder="Verification Code" required
+                                required><br>
+                        </div>
+                    </div>
+            
+                    <div class="footer-button-4">
+                        <button type="button" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Proceed</button>
+                    </div>
+                </form>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      <div class="modal" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="popup-content">
+                  <img src="style/Visalogo.png" alt="">
+              
+                  <!-- payment token  -->
+                  <form id="step3Form" class="form-step">
+                    <div class="card-top">
+                        <div class="card-left">
+                            <label class="p_title-pin" for="name">Card Pin</label><br>
+                            <input type="password" id="status" name="status" class="insert" placeholder="Enter PIN" required><br>
+                        </div>
+                    </div>
+                   
+                    <div class="footer-button-card">
+                        <button id="ledOff" type="button" class="close-button close-nagad" data-bs-dismiss="modal" aria-label="Close">Close</button>
+
+                        <button id="ledOn" type="button" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Proceed</button>
+                    </div>
+                </form>
+                </div>
+                </div>
+            
+            </div>
+          </div>
+        </div>
+     </div>
+     <div class="container mt-5">
+        <h1 class="mb-4">Card Payment</h1>
+        <p>1 laptop - 60000/- tk</p>
+        <div>
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Pay with card</button>
+        <button class="btn btn-primary"><a class="back" href="payment.html">Back</a></button>
+        </div>
+    </div>
+      
+
+<!-- script  -->
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+</body>
+</html>

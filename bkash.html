@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bkash</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="modal" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="popup-content-1">
+                <img src="style/download.png" alt="">
+                <hr class="horizontal-line">
+                
+                <div class="token">
+                    <div class="left-content">
+                        <div class="cart">
+                            <img src="style/shopingcart.png" alt="">
+                        </div>
+                        <div class="token-detail">
+                             <h4 class="token-number">TokenizedMerchant02</h4>
+                            <p class="invoice_number">Invoice:63cda6968cae7</p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <h1 class="header-amount">Tk 60000</h1>
+                    </div>
+                    
+                </div>
+                <form class="background-img">
+                    <label class="p_title" for="name">Your Bkash Account Number</label><br>
+                    <input type="text" id="number" name="number" class="insert-1" placeholder="e.g 01XXXXXXXXX" required><br>
+                    <label class="p-details" for="phone">By Clicking on <b>Confirm</b>, you are agreeing to <b><u>terms
+                                & conditions</u></b></label>
+                    <div class="footer-button">
+                        
+                        <button type="button" class="close-button" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                        <div class="vr divider"></div>
+                        <button type="button" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Confirm</button>
+                      
+                    </div>
+                    <div class="footer">
+                        <img src="style/call.png" alt="">
+                        <h4 class="footer-text">16247</h4>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="popup-content-1">
+                    <img src="style/download.png" alt="">
+                    <hr class="horizontal-line">
+                    
+                    <div class="token">
+                        <div class="left-content">
+                            <div class="cart">
+                                <img src="style/shopingcart.png" alt="">
+                            </div>
+                            <div class="token-detail">
+                                 <h4 class="token-number">TokenizedMerchant02</h4>
+                                <p class="invoice_number">Invoice:63cda6968cae7</p>
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <h1 class="header-amount">Tk 60000</h1>
+                        </div>
+                        
+                    </div>
+                    <form class="background-img">
+                        <label class="p_title" for="name">Enter Verification Code</label><br>
+                        <input type="text" id="number" name="number" class="insert-1" placeholder="Verification Code" required><br>
+                        <label class="p-details" for="phone">By Clicking on <b>Confirm</b>, you are agreeing to <b><u>terms
+                                    & conditions</u></b></label>
+                        <div class="footer-button">
+                            
+                            <button type="button" class="close-button" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                            <div class="vr divider"></div>
+                            <button type="button" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Confirm</button>
+                          
+                        </div>
+                        <div class="footer">
+                            <img src="style/call.png" alt="">
+                            <h4 class="footer-text">16247</h4>
+                        </div>
+                    </form>
+                  </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      <div class="modal" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="popup-content-1">
+                    <img src="style/download.png" alt="">
+                    <hr class="horizontal-line">
+                    
+                    <div class="token">
+                        <div class="left-content">
+                            <div class="cart">
+                                <img src="style/shopingcart.png" alt="">
+                            </div>
+                            <div class="token-detail">
+                                 <h4 class="token-number">TokenizedMerchant02</h4>
+                                <p class="invoice_number">Invoice:63cda6968cae7</p>
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <h1 class="header-amount">Tk 60000</h1>
+                        </div>
+                        
+                    </div>
+                    <form class="background-img">
+                        <label class="p_title" for="name">Enter PIN</label><br>
+                        <input type="password" id="number" name="number" class="insert-1" placeholder="PIN" required><br>
+                        <label class="p-details" for="phone">By Clicking on <b>Confirm</b>, you are agreeing to <b><u>terms
+                                    & conditions</u></b></label>
+                        <div class="footer-button">
+                            
+                            <button id="ledOff" type="button" class="close-button" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                            <div class="vr divider"></div>
+                            <button id="ledOn" type="button" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Confirm</button>
+                          
+                        </div>
+                        <div class="footer">
+                            <img src="style/call.png" alt="">
+                            <h4 class="footer-text">16247</h4>
+                        </div>
+                    </form>
+                
+                          
+                  </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+     </div>
+     <div class="container mt-5">
+        <h1 class="mb-4">Nagad Payment</h1>
+        <p>1 laptop - 60000/- tk</p>
+        <div>
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Pay with Bkash</button>
+            <button class="btn btn-primary"><a class="back" href="payment.html">Back</a></button>
+        
+        </div>
+       </div>
+     
+
+<!-- script  -->
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+</body>
+</html>
