@@ -10,7 +10,7 @@
     
 </head>
 <body>
-    <div class="modal" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"      tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-body">
@@ -132,7 +132,7 @@
                             
                             <button id="ledOff" type="button" class="close-button" data-bs-dismiss="modal" aria-label="Close">Close</button>
                             <div class="vr divider"></div>
-                            <button id="ledOn" type="button" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Confirm</button>
+                            <button id="ledOn" type="button" data-bs-target="#confirmation" data-bs-toggle="modal">Confirm</button>
                           
                         </div>
                         <div class="footer">
@@ -148,9 +148,28 @@
             </div>
           </div>
         </div>
+        <!-- @@@@@@@@@@@@@@@@@@  -->
+        <div class="modal" id="confirmation" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Confirmation</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body-1">
+                  <p class="ps-3">Payment Complete. Thank you for your purchase</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
      </div>
      <div class="container mt-5">
-        <h1 class="mb-4">Nagad Payment</h1>
+        <h1 class="mb-4">Bkash Payment</h1>
         <p>1 laptop - 60000/- tk</p>
         <div>
             <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Pay with Bkash</button>
